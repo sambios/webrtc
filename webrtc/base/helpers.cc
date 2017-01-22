@@ -8,28 +8,36 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/base/helpers.h"
+
 
 #include <limits>
 
 #if defined(FEATURE_ENABLE_SSL)
-#include "webrtc/base/sslconfig.h"
-#if defined(SSL_USE_OPENSSL)
-#include <openssl/rand.h>
-#else
-#if defined(WEBRTC_WIN)
-#define WIN32_LEAN_AND_MEAN
-#include <windows.h>
-#include <ntsecapi.h>
-#endif  // WEBRTC_WIN
-#endif  // else
+    #include "webrtc/base/sslconfig.h"
+    #if defined(SSL_USE_OPENSSL)
+        #include <openssl/rand.h>
+    #else
+        #if defined(WEBRTC_WIN)
+            #define WIN32_LEAN_AND_MEAN
+            #include <winsock2.h>
+            #include <windows.h>
+            #include <ntsecapi.h>
+        #endif  // WEBRTC_WIN
+    #endif  // else
 #endif  // FEATURE_ENABLED_SSL
+
+// Add at [1/20/2017 Steven]
+#if defined(WEBRTC_WIN)
+#include "webrtc/base/win32.h"
+#endif 
 
 #include "webrtc/base/base64.h"
 #include "webrtc/base/basictypes.h"
 #include "webrtc/base/logging.h"
 #include "webrtc/base/scoped_ptr.h"
 #include "webrtc/base/timeutils.h"
+#include "webrtc/base/helpers.h"
+
 
 // Protect against max macro inclusion.
 #undef max

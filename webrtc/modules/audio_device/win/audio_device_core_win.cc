@@ -18,6 +18,9 @@
 #pragma message(">> INFO: Windows Core Audio is not supported in VS 2003")
 #endif
 
+#include <winsock2.h>
+#include <windows.h>
+
 #include "webrtc/modules/audio_device/audio_device_config.h"
 
 #ifdef WEBRTC_WINDOWS_CORE_AUDIO_BUILD
@@ -27,7 +30,6 @@
 #include <assert.h>
 #include <string.h>
 
-#include <windows.h>
 #include <comdef.h>
 #include <dmo.h>
 #include <Functiondiscoverykeys_devpkey.h>

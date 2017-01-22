@@ -8,16 +8,17 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/examples/peerconnection/client/defaults.h"
 
 #include <stdlib.h>
 #include <string.h>
 
-#ifdef WIN32
+#ifdef _WIN32
 #include <winsock2.h>
 #else
 #include <unistd.h>
 #endif
+
+#include "webrtc/examples/peerconnection/client/defaults.h"
 
 #include "webrtc/base/arraysize.h"
 #include "webrtc/base/common.h"

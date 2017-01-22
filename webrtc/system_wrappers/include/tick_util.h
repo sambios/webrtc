@@ -16,6 +16,7 @@
 
 #if _WIN32
 // Note: The Windows header must always be included before mmsystem.h
+#include <winsock2.h>
 #include <windows.h>
 #include <mmsystem.h>
 #elif WEBRTC_LINUX

@@ -8,12 +8,12 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#include "webrtc/modules/desktop_capture/mouse_cursor_monitor.h"
+
 
 #include <assert.h>
-
 #include <memory>
-
+#include "webrtc/base/win32.h"
+#include "webrtc/modules/desktop_capture/mouse_cursor_monitor.h"
 #include "webrtc/modules/desktop_capture/desktop_frame.h"
 #include "webrtc/modules/desktop_capture/mouse_cursor.h"
 #include "webrtc/modules/desktop_capture/win/cursor.h"

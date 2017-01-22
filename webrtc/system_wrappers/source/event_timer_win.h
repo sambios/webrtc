@@ -11,6 +11,7 @@
 #ifndef WEBRTC_SYSTEM_WRAPPERS_SOURCE_EVENT_WIN_H_
 #define WEBRTC_SYSTEM_WRAPPERS_SOURCE_EVENT_WIN_H_
 
+#include <WinSock2.h>
 #include <windows.h>
 
 #include "webrtc/system_wrappers/include/event_wrapper.h"

@@ -19,24 +19,24 @@
 #include <string.h>
 
 #if defined(_WIN32)
-    #include "audio_device_wave_win.h"
- #if defined(WEBRTC_WINDOWS_CORE_AUDIO_BUILD)
-    #include "audio_device_core_win.h"
- #endif
+    #include "webrtc/modules/audio_device/win/audio_device_wave_win.h"
+    #if defined(WEBRTC_WINDOWS_CORE_AUDIO_BUILD)
+        #include "webrtc/modules/audio_device/win/audio_device_core_win.h"
+    #endif
 #elif defined(WEBRTC_ANDROID)
-#include <stdlib.h>
-#include "webrtc/modules/audio_device/android/audio_device_template.h"
-#include "webrtc/modules/audio_device/android/audio_manager.h"
-#include "webrtc/modules/audio_device/android/audio_record_jni.h"
-#include "webrtc/modules/audio_device/android/audio_track_jni.h"
-#include "webrtc/modules/audio_device/android/opensles_player.h"
+    #include <stdlib.h>
+    #include "webrtc/modules/audio_device/android/audio_device_template.h"
+    #include "webrtc/modules/audio_device/android/audio_manager.h"
+    #include "webrtc/modules/audio_device/android/audio_record_jni.h"
+    #include "webrtc/modules/audio_device/android/audio_track_jni.h"
+    #include "webrtc/modules/audio_device/android/opensles_player.h"
 #elif defined(WEBRTC_LINUX)
- #if defined(LINUX_ALSA)
-   #include "audio_device_alsa_linux.h"
- #endif
-#if defined(LINUX_PULSE)
-    #include "audio_device_pulse_linux.h"
-#endif
+    #if defined(LINUX_ALSA)
+        #include "audio_device_alsa_linux.h"
+    #endif
+    #if defined(LINUX_PULSE)
+        #include "audio_device_pulse_linux.h"
+    #endif
 #elif defined(WEBRTC_IOS)
     #include "audio_device_ios.h"
 #elif defined(WEBRTC_MAC)

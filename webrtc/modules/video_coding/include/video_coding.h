@@ -18,6 +18,7 @@
 // declare them as one thing here whereas in another place a windows header
 // may have been included and then implementing CreateEvent() causes compilation
 // errors.  So for consistency, we include the main windows header here.
+#include <WinSock2.h>
 #include <windows.h>
 #endif
 

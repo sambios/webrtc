@@ -12,6 +12,7 @@
 #define WEBRTC_SYSTEM_WRAPPERS_SOURCE_TRACE_WIN_H_
 
 #include <stdio.h>
+#include <WinSock2.h>
 #include <windows.h>
 
 #include "webrtc/system_wrappers/source/trace_impl.h"

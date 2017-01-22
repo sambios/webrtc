@@ -797,11 +797,11 @@ SrtpSession::SrtpSession() {
 SrtpSession::~SrtpSession() {
 }
 
-bool SrtpSession::SetSend(const std::string& cs, const uint8_t* key, int len) {
+bool SrtpSession::SetSend(int cs, const uint8_t* key, int len) {
   return SrtpNotAvailable(__FUNCTION__);
 }
 
-bool SrtpSession::SetRecv(const std::string& cs, const uint8_t* key, int len) {
+bool SrtpSession::SetRecv(int cs, const uint8_t* key, int len) {
   return SrtpNotAvailable(__FUNCTION__);
 }
 

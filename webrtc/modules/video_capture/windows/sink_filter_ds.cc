@@ -8,6 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
+#include "webrtc/base//win32.h"
 #include "webrtc/modules/video_capture/windows/sink_filter_ds.h"
 
 #include "webrtc/base/platform_thread.h"

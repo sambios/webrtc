@@ -11,6 +11,7 @@
 #include "webrtc/system_wrappers/include/atomic32.h"
 
 #include <assert.h>
+#include <winsock2.h>
 #include <windows.h>
 
 #include "webrtc/common_types.h"

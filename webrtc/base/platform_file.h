@@ -14,6 +14,7 @@
 #include <stdio.h>
 
 #if defined(WEBRTC_WIN)
+#include <WinSock2.h>
 #include <windows.h>
 #endif
 

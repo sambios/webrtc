@@ -11,6 +11,7 @@
 #ifndef WEBRTC_SYSTEM_WRAPPERS_SOURCE_CONDITION_VARIABLE_EVENT_WIN_H_
 #define WEBRTC_SYSTEM_WRAPPERS_SOURCE_CONDITION_VARIABLE_EVENT_WIN_H_
 
+#include <WinSock2.h>
 #include <windows.h>
 
 namespace webrtc {

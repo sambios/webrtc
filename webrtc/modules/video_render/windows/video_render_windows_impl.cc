@@ -8,6 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
+#include "webrtc/base/win32.h"
 #include "webrtc/engine_configurations.h"
 #include "webrtc/modules/video_render/windows/video_render_windows_impl.h"
 
