@@ -17,10 +17,10 @@
 
 // NOTE: This include order must remain to avoid compile errors, even though
 //       it breaks the style guide.
-#include "vpx/vpx_encoder.h"
-#include "vpx/vpx_decoder.h"
-#include "vpx/vp8cx.h"
-#include "vpx/vp8dx.h"
+#include "3rdparty/libvpx/vpx/vpx_encoder.h"
+#include "3rdparty/libvpx/vpx/vpx_decoder.h"
+#include "3rdparty/libvpx/vpx/vp8cx.h"
+#include "3rdparty/libvpx/vpx/vp8dx.h"
 
 #include "webrtc/common_video/include/i420_buffer_pool.h"
 #include "webrtc/modules/video_coding/include/video_codec_interface.h"

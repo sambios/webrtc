@@ -19,6 +19,7 @@
 #include <openssl/tls1.h>
 #include <openssl/x509v3.h>
 #ifndef OPENSSL_IS_BORINGSSL
+#include <openssl/ssl.h>
 #include <openssl/dtls1.h>
 #endif
 

@@ -11,6 +11,7 @@
 #include "webrtc/system_wrappers/include/event_wrapper.h"
 
 #if defined(_WIN32)
+#include <winsock2.h>
 #include <windows.h>
 #include "webrtc/system_wrappers/source/event_timer_win.h"
 #elif defined(WEBRTC_MAC) && !defined(WEBRTC_IOS)

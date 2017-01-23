@@ -16,10 +16,10 @@
 #include <time.h>
 #include <vector>
 
-#include "vpx/vpx_encoder.h"
-#include "vpx/vpx_decoder.h"
-#include "vpx/vp8cx.h"
-#include "vpx/vp8dx.h"
+#include "3rdparty/libvpx/vpx/vpx_encoder.h"
+#include "3rdparty/libvpx/vpx/vpx_decoder.h"
+#include "3rdparty/libvpx/vpx/vp8cx.h"
+#include "3rdparty/libvpx/vpx/vp8dx.h"
 
 #include "webrtc/base/checks.h"
 #include "webrtc/base/keep_ref_until_done.h"

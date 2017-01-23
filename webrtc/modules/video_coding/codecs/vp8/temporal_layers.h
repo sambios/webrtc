@@ -12,7 +12,7 @@
 #ifndef WEBRTC_MODULES_VIDEO_CODING_CODECS_VP8_TEMPORAL_LAYERS_H_
 #define WEBRTC_MODULES_VIDEO_CODING_CODECS_VP8_TEMPORAL_LAYERS_H_
 
-#include "vpx/vpx_encoder.h"
+#include "3rdparty/libvpx/vpx/vpx_encoder.h"
 
 #include "webrtc/common_video/include/video_image.h"
 #include "webrtc/typedefs.h"

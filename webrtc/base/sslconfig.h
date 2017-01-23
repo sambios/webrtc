@@ -16,7 +16,8 @@
 #if !defined(SSL_USE_SCHANNEL) && !defined(SSL_USE_OPENSSL)
 #if defined(WEBRTC_WIN)
 
-#define SSL_USE_SCHANNEL 1
+//#define SSL_USE_SCHANNEL 1
+#define SSL_USE_OPENSSL 1
 
 #else  // defined(WEBRTC_WIN)
 
