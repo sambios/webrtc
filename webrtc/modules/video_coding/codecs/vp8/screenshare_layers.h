@@ -11,7 +11,7 @@
 
 #include <list>
 
-#include "3rdparty/libvpx/vpx/vpx_encoder.h"
+#include "libvpx/vpx/vpx_encoder.h"
 
 #include "webrtc/base/timeutils.h"
 #include "webrtc/modules/video_coding/codecs/vp8/temporal_layers.h"

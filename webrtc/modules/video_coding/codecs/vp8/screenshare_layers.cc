@@ -14,8 +14,8 @@
 #include <algorithm>
 
 #include "webrtc/base/checks.h"
-#include "3rdparty/libvpx/vpx/vpx_encoder.h"
-#include "3rdparty/libvpx/vpx/vp8cx.h"
+#include "libvpx/vpx/vpx_encoder.h"
+#include "libvpx/vpx/vp8cx.h"
 #include "webrtc/modules/video_coding/include/video_codec_interface.h"
 #include "webrtc/system_wrappers/include/clock.h"
 #include "webrtc/system_wrappers/include/metrics.h"

@@ -10,8 +10,8 @@
 #include <stdlib.h>
 #include <algorithm>
 
-#include "3rdparty/libvpx/vpx/vpx_encoder.h"
-#include "3rdparty/libvpx/vpx/vp8cx.h"
+#include "libvpx/vpx/vpx_encoder.h"
+#include "libvpx/vpx/vp8cx.h"
 #include "webrtc/modules/video_coding/include/video_codec_interface.h"
 #include "webrtc/modules/video_coding/codecs/vp8/include/vp8_common_types.h"
 #include "webrtc/modules/video_coding/codecs/vp8/temporal_layers.h"

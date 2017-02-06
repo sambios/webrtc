@@ -11,9 +11,9 @@
 
 #include "webrtc/modules/video_coding/codecs/vp9/vp9_frame_buffer_pool.h"
 
-#include "3rdparty/libvpx/vpx/vpx_codec.h"
-#include "3rdparty/libvpx/vpx/vpx_decoder.h"
-#include "3rdparty/libvpx/vpx/vpx_frame_buffer.h"
+#include "libvpx/vpx/vpx_codec.h"
+#include "libvpx/vpx/vpx_decoder.h"
+#include "libvpx/vpx/vpx_frame_buffer.h"
 
 #include "webrtc/base/checks.h"
 #include "webrtc/base/logging.h"

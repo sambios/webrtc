@@ -29,10 +29,11 @@
 extern "C" {
 #ifdef SRTP_RELATIVE_PATH
 #include "srtp.h"  // NOLINT
-#include "srtp_priv.h"  // NOLINT
+#include "srtp_priv.h"
+#include "err.h"
 #else
-#include "third_party/libsrtp/srtp/include/srtp.h"
-#include "third_party/libsrtp/srtp/include/srtp_priv.h"
+#include "3rdparty/libsrtp/srtp/include/srtp.h"
+#include "3rdparty/libsrtp/srtp/include/srtp_priv.h"
 #endif  // SRTP_RELATIVE_PATH
 }
 #ifdef  ENABLE_EXTERNAL_AUTH
@@ -80,8 +81,8 @@ void EnableSrtpDebugging() {
   debug_on(mod_stat);
   debug_on(mod_alloc);
   debug_on(mod_aes_icm);
-  // debug_on(mod_aes_cbc);
-  // debug_on(mod_hmac);
+   //debug_on(mod_aes_cbc);
+   //debug_on(mod_hmac);
 #endif
 #endif  // HAVE_SRTP
 }
@@ -631,7 +632,7 @@ bool SrtpSession::GetSendStreamPacketIndex(void* p,
                                            int in_len,
                                            int64_t* index) {
   srtp_hdr_t* hdr = reinterpret_cast<srtp_hdr_t*>(p);
-  srtp_stream_ctx_t* stream = srtp_get_stream(session_, hdr->ssrc);
+  srtp_stream_ctx_t* stream = srtp_get_stream2(session_, hdr->ssrc);
   if (stream == NULL)
     return false;
 

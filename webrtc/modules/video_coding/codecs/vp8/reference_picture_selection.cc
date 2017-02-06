@@ -10,8 +10,8 @@
 
 #include "webrtc/modules/video_coding/codecs/vp8/reference_picture_selection.h"
 
-#include "3rdparty/libvpx/vpx/vpx_encoder.h"
-#include "3rdparty/libvpx/vpx/vp8cx.h"
+#include "libvpx/vpx/vpx_encoder.h"
+#include "libvpx/vpx/vp8cx.h"
 #include "webrtc/typedefs.h"
 
 namespace webrtc {

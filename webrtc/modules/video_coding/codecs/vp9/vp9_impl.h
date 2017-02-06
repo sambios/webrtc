@@ -18,9 +18,9 @@
 #include "webrtc/modules/video_coding/codecs/vp9/include/vp9.h"
 #include "webrtc/modules/video_coding/codecs/vp9/vp9_frame_buffer_pool.h"
 
-#include "3rdparty/libvpx/vpx/svc_context.h"
-#include "3rdparty/libvpx/vpx/vpx_decoder.h"
-#include "3rdparty/libvpx/vpx/vpx_encoder.h"
+#include "libvpx/vpx/svc_context.h"
+#include "libvpx/vpx/vpx_decoder.h"
+#include "libvpx/vpx/vpx_encoder.h"
 
 namespace webrtc {
 

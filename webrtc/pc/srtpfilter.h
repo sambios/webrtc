@@ -24,10 +24,14 @@
 #include "webrtc/media/base/cryptoparams.h"
 #include "webrtc/p2p/base/sessiondescription.h"
 
+#ifdef SRTP_RELATIVE_PATH
 // Forward declaration to avoid pulling in libsrtp headers here
-struct srtp_event_data_t;
-struct srtp_ctx_t;
-struct srtp_policy_t;
+#include "srtp.h"
+#include "srtp_priv.h"
+//struct srtp_event_data_t;
+//struct srtp_ctx_t;
+//struct srtp_policy_t;
+#endif 
 
 namespace cricket {
 
